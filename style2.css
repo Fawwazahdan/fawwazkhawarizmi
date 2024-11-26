@@ -1,0 +1,333 @@
+/* CSS untuk Galeri Foto (kenalan.html) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Gaya untuk galeri */
+.gallery {
+    text-align: center;
+    margin: 0 auto; /* Tengah-kan konten */
+    padding: 20px;
+    max-width: 100%; /* Membatasi lebar galeri sesuai lebar layar */
+    box-sizing: border-box;
+}
+
+.photo-container {
+    width: 100%;
+    max-width: 600px; /* Batasi lebar gambar agar tidak terlalu besar */
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.photo-container img {
+    width: 100%; /* Gambar memenuhi lebar kontainer */
+    height: auto; /* Mengatur tinggi gambar secara otomatis */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.photo-container p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Tombol navigasi */
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.controls button:hover {
+    background-color: #45a049;
+}
+
+/* Tombol Kembali ke Beranda */
+.back-button {
+    margin-top: 20px;
+}
+
+.back-button button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.back-button button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+    .photo-container {
+        max-width: 90%; /* Menyesuaikan dengan ukuran layar tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-container {
+        max-width: 100%; /* Memastikan gambar tetap tidak melebihi layar ponsel */
+    }
+}
+
+/* Gaya untuk Foto di Halaman foto_komunitas.html */
+.photo-viewer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.photo-container {
+    width: 100%;
+    max-width: 800px; /* Gambar tidak lebih dari 800px lebar */
+    margin: 0 auto;
+}
+
+.photo-container img {
+    width: 100%; /* Menyesuaikan dengan lebar kontainer */
+    height: auto; /* Menjaga rasio gambar */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button {
+    margin-top: 20px;
+}
+
+.back-button button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.back-button button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+/* Gaya untuk Halaman Job Desk */
+.jobdesk-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.jobdesk-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.jobdesk-container p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.photo-slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo-slot img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Tombol Kembali */
+.back-button button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button button:hover {
+    background-color: #45a049;
+}
+
+/* Gaya untuk pengguna.html */
+.photo-list {
+    padding: 20px;
+    text-align: center;
+}
+
+.photo-item {
+    margin-bottom: 20px;
+}
+
+.photo-item img {
+    width: 90%; /* Foto menyesuaikan ukuran layar */
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.photo-item p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #2e7d32;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.site-title {
+    flex-grow: 1;
+}
+
+.site-title h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.site-title p {
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navigation ul li {
+    display: inline;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.navigation ul li a:hover {
+    background-color: #2e7d32;
+    border-radius: 5px;
+}
+
+body {
+    background-image: url('backgroundf.jpeg'); /* Ganti 'background.jpg' dengan nama file gambar Anda */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Membuat latar belakang tetap */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Warna hitam transparan */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.photo-item img {
+    max-width: 300px; /* Atur lebar maksimum gambar */
+    height: auto; /* Pertahankan rasio aspek gambar */
+    display: block;
+    margin: 0 auto; /* Pusatkan gambar */
+    border-radius: 8px; /* Opsional: Buat sudut gambar melengkung */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Opsional: Tambahkan bayangan untuk estetika */
+}
+
+.photo-item {
+    text-align: center; /* Pusatkan konten di dalam setiap item */
+    margin-bottom: 20px; /* Beri jarak antar foto */
+}
+
+@media (max-width: 600px) {
+    .photo-item img {
+        max-width: 100%; /* Gambar menyesuaikan dengan lebar layar */
+    }
+}
+
+.description-box {
+    border: 2px solid #000000; /* Warna border */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 15px; /* Ruang dalam kotak */
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang semi-transparan */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    text-align: left; /* Rata kiri */
+    max-width: 600px; /* Lebar maksimum kotak */
+    margin: 10px auto; /* Tengah-kan kotak dan beri jarak */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+.description-box p {
+    margin: 10px 0; /* Jarak antar paragraf */
+    font-size: 1em; /* Ukuran teks */
+    color: #333; /* Warna teks */
+}

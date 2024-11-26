@@ -1,0 +1,291 @@
+/* CSS untuk Galeri Foto (kenalan.html) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Gaya untuk galeri */
+.gallery {
+    text-align: center;
+    margin: 0 auto; /* Tengah-kan konten */
+    padding: 20px;
+    max-width: 100%; /* Membatasi lebar galeri sesuai lebar layar */
+    box-sizing: border-box;
+}
+
+.photo-container {
+    width: 100%;
+    max-width: 600px; /* Batasi lebar gambar agar tidak terlalu besar */
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.photo-container img {
+    width: 100%; /* Gambar memenuhi lebar kontainer */
+    height: auto; /* Mengatur tinggi gambar secara otomatis */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.photo-container p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Tombol navigasi */
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.controls button:hover {
+    background-color: #45a049;
+}
+
+/* Tombol Kembali ke Beranda */
+.back-button {
+    margin-top: 20px;
+}
+
+.back-button button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.back-button button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+
+
+.photo-container img {
+    width: 100%; /* Menyesuaikan dengan lebar kontainer */
+    height: auto; /* Menjaga rasio gambar */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button {
+    margin-top: 20px;
+}
+
+.back-button button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.back-button button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+/* Gaya untuk Halaman Job Desk */
+.jobdesk-container {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.jobdesk-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.jobdesk-container p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.photo-slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo-slot img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Tombol Kembali */
+.back-button button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button button:hover {
+    background-color: #45a049;
+}
+
+/* Gaya untuk pengguna.html */
+.photo-list {
+    padding: 20px;
+    text-align: center;
+}
+
+.photo-item {
+    margin-bottom: 20px;
+}
+
+.photo-item img {
+    width: 90%; /* Foto menyesuaikan ukuran layar */
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.photo-item p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.site-title {
+    flex-grow: 1;
+}
+
+.site-title h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.site-title p {
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navigation ul li {
+    display: inline;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.navigation ul li a:hover {
+    background-color: #2e7d32;
+    border-radius: 5px;
+}
+
+body {
+    background-image: url('backgroundf.jpeg'); /* Ganti 'background.jpg' dengan nama file gambar Anda */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Membuat latar belakang tetap */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Warna hitam transparan */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Gaya untuk latar belakang halaman jobdesk.html */
+body {
+    background-image: url('backgroundf.jpeg'); /* Sama seperti di foto_komunitas.html */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Tambahkan padding dan margin ke jobdesk-container agar konten lebih menonjol */
+.jobdesk-container {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang semi-transparan untuk menonjolkan konten */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Gaya untuk foto dalam slot */
+.photo-slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header dengan gambar latar belakang yang disesuaikan */
+header {
+    position: relative; /* Menjaga posisi konten header */
+    background-image: url('bully.jpeg'); /* Ganti URL dengan gambar yang diinginkan */
+    background-size: cover; /* Agar gambar memenuhi seluruh area tanpa terpotong */
+    background-position: center; /* Posisi gambar di tengah */
+    background-repeat: no-repeat; /* Agar gambar tidak diulang */
+    height: 1080px; /* Set tinggi header menjadi 1080px untuk menyesuaikan ukuran foto */
+    color: #fff; /* Warna teks putih */
+    text-align: center; /* Teks rata tengah */
+    display: flex; /* Untuk membuat tata letak fleksibel */
+    flex-direction: column; /* Membuat konten header menjadi kolom */
+    justify-content: center; /* Menjaga konten tetap di tengah secara vertikal */
+    align-items: center; /* Menjaga konten tetap di tengah secara horizontal */
+}
+
+/* Overlay hitam semi-transparan */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay hitam transparan */
+    z-index: 1;
+}
+
+/* Pastikan konten berada di atas overlay */
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+header button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 2;
+}
+
+header button:hover {
+    background-color: #45a049;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+#services {
+    background-color: #fff;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.service {
+    width: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+.social-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.social-link:hover {
+    background-color: #45a049;
+}
+
+/* Tombol untuk Lihat Foto Tim Kami */
+.service button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+    margin-top: 10px; /* Memberi jarak antara tombol dan elemen lainnya */
+}
+
+.service button:hover {
+    background-color: #45a049;
+}

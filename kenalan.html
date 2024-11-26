@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="photo-container">
+            <img id="currentPhoto" src="story1.jpeg" alt="Foto 1">
+            <p id="photoDescription">Deskripsi Foto 1</p>
+        </div>
+        <div class="controls">
+            <button onclick="prevPhotos()">&#8592; Sebelumnya</button>
+            <button onclick="nextPhotos()">Berikutnya &#8594;</button>
+        </div>
+        <div class="back-button">
+            <button onclick="window.location.href='index.html'">Kembali ke Beranda</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Komunitas Talkabtbullying</p>
+    </footer>
+
+    <script src="kenalan.js"></script>
+</body>
+</html>
